@@ -1,9 +1,7 @@
-require_relative 'common_point'
 require_relative 'teacher'
 
 class ApprenticeTeacher < Teacher
 
-  include Common
   RATING_FACTOR = 80
 
   def initialize(options={})
@@ -12,9 +10,6 @@ class ApprenticeTeacher < Teacher
   end
 
   def teach_stuff
-    # response = super
-    # response = "Listen, class, this is how everything works. " + response + "... You're welcome."
-    # response
     response = ""
     response += "Listen, class, this is how everything works. "
     response += "*drops crazy knowledge bomb* "

@@ -1,10 +1,8 @@
-require_relative 'common_point'
 require_relative 'teacher'
 
 class SeniorTeacher < Teacher
   attr_reader :performance_rating
 
-  include Common
   RATING_FACTOR = 90
 
   def initialize(options={})
